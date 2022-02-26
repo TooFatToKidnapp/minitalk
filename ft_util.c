@@ -6,16 +6,16 @@
 /*   By: aabdou <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/19 22:57:53 by aabdou            #+#    #+#             */
-/*   Updated: 2022/02/19 22:57:57 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/02/26 22:51:10 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"minitalk.h"
 
-int ft_putchar(char c )
+int	ft_putchar(char c)
 {
-    write(1, &c, 1);
-    return 1;
+	write(1, &c, 1);
+	return (1);
 }
 
 void	ft_putnbr(int nb)

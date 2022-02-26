@@ -6,7 +6,7 @@
 /*   By: aabdou <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 20:27:08 by aabdou            #+#    #+#             */
-/*   Updated: 2022/02/18 20:27:11 by aabdou           ###   ########.fr       */
+/*   Updated: 2022/02/26 22:22:45 by aabdou           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	send_char(char c, int pid)
 
 void	sig_handler(int sig)
 {
-	if(sig == SIGUSR1)
+	if (sig == SIGUSR1)
 	{
 		write(1, "\033[0;32m", 7);
 		write(1, "Server: message received\n", 25);
@@ -44,8 +44,8 @@ int	main(int ac, char **av)
 	i = 0;
 	if (ac != 3)
 	{
-			write(1, "\033[0;31m", 7);
-			write(2, "not enough arguments\n", 21);	
+		write(1, "\033[0;31m", 7);
+		write(2, "not enough arguments\n", 21);
 		return (0);
 	}
 	string = av[2];
